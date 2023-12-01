@@ -19,7 +19,7 @@ def create_template():
         # Handle form submission
 
     # Render the create_template page
-    return render_template('create_template.html')
+        return render_template('create_template.html')
 
 @app.route('/add_details/<int:template_id>', methods=['GET', 'POST'])
 def add_details(template_id):
@@ -29,7 +29,7 @@ def add_details(template_id):
 
     # Retrieve the selected template from the database
     # Render the add_details page with the selected template
-    return render_template('add_details.html', template=selected_template)
+        return render_template('add_details.html', template=selected_template)
 
 if __name__ == '__main__':
     app.run(debug=True)
